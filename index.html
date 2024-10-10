@@ -1,8 +1,62 @@
-<html>
-    <head></head>
-    <body>
-        <h1>Index</h1>
-        <a href="page1.php">Page 1</a>
-        <a href="page2.php">Page 2</a>
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/simple-icons@13.13.0/index.min.js"
+        ></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    fontFamily: {
+                        mono: ["JetBrains Mono", "monospace"],
+                    },
+                },
+            };
+        </script>
+        <title>hgod.in websites</title>
+    </head>
+    <body class="font-mono bg-white dark:bg-black text-black dark:text-white">
+        <div class="flex flex-col max-w-3xl mx-auto gap-3">
+            <header class="py-4 sticky top-0 bg-black">
+                <h1 class="text-2xl">Websites by hgod.in</h1>
+                <p class="text-sm">
+                    A collection of websites made by henrique@hgod.in
+                </p>
+            </header>
+            <ul class="list-disc list-inside flex flex-col space-y-2">
+                <li>
+                    <a
+                        href="https://hgod.in/cv/"
+                        class="text-blue-500 dark:text-blue-300 hover:text-blue-700 dark:hover:text-blue-500 font-semibold underline"
+                        >hgod.in/cv</a
+                    >
+                    <p class="italic">Curriculum-vitae</p>
+                </li>
+            </ul>
+            <footer class="sticky py-2 bottom-0 bg-black">
+                <a
+                    href="https://github.com/hgodinho"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub profile link"
+                    ><img
+                        height="16"
+                        width="16"
+                        alt="GitHub"
+                        src="https://cdn.simpleicons.org/github/white"
+                /></a>
+            </footer>
+        </div>
     </body>
 </html>
