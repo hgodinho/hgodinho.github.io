@@ -5,6 +5,7 @@ import vike from "vike/plugin";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
+    base: "/",
     plugins: [vike({}), react({}), tailwindcss(), tsconfigPaths()],
     server: {
         host: "0.0.0.0",
